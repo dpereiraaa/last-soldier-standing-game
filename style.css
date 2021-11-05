@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  font-family: "Permanent Marker";
+}
+
+#my-canvas {
+  background-color: lightgray;
+}
+
+#splash-screen {
+  background-image: url(./images/startgamebg.jpg);
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#splash-screen > div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+#splash-screen > h1 {
+  font-size: 40px;
+  color: black;
+}
+
+#start-btn,
+#restart-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hide canvas & gameover screen elements at the start */
+
+#my-canvas {
+  display: none;
+}
+
+#canvas-score {
+  display: none;
+}
+
+#gameover-screen {
+  display: none;
+  width: 800px;
+  height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#scorespan {
+  display: none;
+}
